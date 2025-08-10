@@ -1,87 +1,173 @@
-<！doctype 超文本标记语言><超文本标记语言 朗="zh-CN">
-<头>
-<元 字符集="UTF-8" />
-<元 姓名="视口" 内容="宽度=设备宽度，初始比例=1" />
-<标题>怀安给小猫的贪吃蛇</标题>
-<风格>
-:根{
---bg：#0b0f14；--CARD：#101823；--ink：#e6f1ff；--已静音：#9fb3c8；--重音：#6ee7ff；--重音2：#a78bfa；--好：#22c55e；--warn：#ff6b86；
+<!DOCTYPE html><html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>怀安给小猫的贪吃蛇</title>
+<style>
+  :root{
+    --bg:#0b0f14;--card:#101823;--ink:#e6f1ff;--muted:#9fb3c8;--accent:#6ee7ff;--accent2:#a78bfa;--good:#22c55e;--warn:#ff6b86;
   }
-*{箱体尺寸:边框框}
-超文本标记语言,身体{高度:100%}
-身体{边缘：0；背景：径向梯度(1200px1200px800px80%-10%，#162234，透明)，径向梯度(1000px 700px，-10%90%，#0d1d28，透明)，var(--bg)；颜色：var(--ink)；字体系列：ui-sans-serif、system-ui、-apple-system、Segoe UI、Roboto、Helvetica、Arial、"苹果颜色表情符号"、"Segoe UI表情符号"}800px at80%-10%，#162234，transparent)，radial-gradient(1000px 700px，-10%90%，#0d1d28，透明)，var(--bg)；颜色：var(--ink)；字体系列：ui-sans-serif、system-ui、-apple-system、Segoe UI、Roboto、Helvetica、Arial、“苹果颜色表情符号”、“Segoe UI表情符号”}
-。换行{max-width:980px；margin:0auto；padding:20px}换行{max-width:980px；margin:0auto；padding:20px}
-页眉{显示：弯曲；对齐项目：居中；对齐内容：间距；间距：12px；页边距：18px0}header{display:flex；align-items:center；justify-content:space-between；gap:12px；margin:18px 0}
-.brand{font-weight:900；字母间距：.3px}brand{font-weight:900；letter-spacing：.3px}
-。卡{背景：线性梯度(180°，rgba(255，255，255，.06)，rgba(255，255，255，.02))；边框：1px固体rgba(255，255，255，.08)；边框半径：20px；框阴影：030px80px rgba(0,0,0,.35)}卡{背景：线性梯度(180°，rgba(255，255，255，.06)，rgba(255，255，255，.02))；边框：1px固体rgba(255，255，255，.08)；边框半径：20px；框阴影：030px80px rgba(0,0,0,.35)}
-.Hero{padding:28px；显示：网格；间距：18px；网格模板列：1.1FR.9fr}hero{padding:28px；display:grid；gap:18px；grid-template-columns:1.1FR.9fr}
-@media(最大宽度：900px){.Hero{grid-template-columns:1fr}}@media(最大宽度：900px){.Hero{grid-template-columns:1fr}}
-。大{font-size:36px；font-weight:900；页边距：6px0}big{font-size:36px；font-weight:900；页边距：6px 0}
-。静音{color:var(--muted)}静音{color:var(--muted)}
-.btn{appearance:none;border:none;border-radius:14px;background:linear-gradient(180deg,var(--accent),#4cc2ff);color:#03253a;font-weight:900;padding:12px16px；光标：指针；框阴影：010px28px rgba(78,205,255,.35)}btn{appearance:none;border:none;border-radius:14px;background:linear-gradient(180deg,var(--accent),#4cc2ff);color:#03253a;font-weight:900;padding:12px16px；cursor:pointer；box-shadow:010px28px rgba(78,205,255,.35)}
-。BTN.SEC{背景：线性梯度(180度，#e5e7eb，#c7c9d7)；颜色：#1f2937}btn.SEC{background：线性梯度(180度，#e5e7eb，#c7c9d7)；color：#1f2937}
-.grid{显示：网格；网格模板列：1fr320px；间距：18px；填充：18px}grid{display:grid；grid-template-columns:1fr 320px；间隙：18px；填充：18px}
-@media(最大宽度：900px){.grid{grid-template-columns:1fr}}@media(最大宽度：900px){.网格{网格模板列：1fr}}
-画布{宽度：100%；纵横比：1；背景：线性渐变(90度，透明24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05)25px，透明25px)，线性梯度(0deg，透明24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05)25px，透明25px)，#0f1620；边界半径：16px；边界：1px实体rgba(255，255，255，.08)；图像渲染：像素化}画布{宽度：100%；纵横比：1；背景：线性渐变(90度，透明24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05)25px，透明25px)，线性梯度(0deg，透明24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05)25px，透明25px)，#0f1620；边框-半径：16px；边框：1px实体rgba(255，255，255，.08)；图像渲染：像素化}
-旁边{background:var(--CARD)；边框：1px实心rgba(255，255，255，.08)；边框半径：16px；填充：16px；高度：fit-content}baside{background:var(--CARD)；边框：1px固体rgba(255，255，255，.08)；边框半径：16px；填充：16px；高度：fit-content}
-。分数{font-size:32px；font-weight:900}分数{font-size:32px；font-weight:900}
-。行{显示：柔线；对齐项目：居中；间距：10px；柔线环绕：环绕}行{显示：柔线；对齐项目：居中；间距：10px；柔线环绕：环绕}
-。药丸{background:rgba(255，255，255，.06)；边框：1px实心rgba(255，255，255，0.08)；填充：6px10px；边框半径：999px；字体大小：12px}pill{background:rgba(255，255，.06)；border:1px实心rgba(255，255，255，0.08)；填充：6px10px；边框半径：999px；字体大小：12px}
-。移动{显示器：无；页边距：12px；间距：10px}mobile{display:none；margin-top:12px；gap:10px}
-.mobile.k{flex:1；最小高度：56px；边框：1px实心rgba(255，255，255，.1)；背景：rgba(255，255，255，.05)；边框半径：12px；颜色：var(--ink)；字体粗细：800}mobile.k{flex:1；最小高度：56px；边框：1px实心rgba(255，255，255，.1)；背景：rgba(255，255，255，.05)；边框半径：12px；颜色：var(--ink)；字体粗细：800}
-@media(最大宽度：900px){.mobile{显示：网格；网格模板列：重复(3，1fr)}}@media(最大宽度：900px){.移动{显示：网格；网格模板列：重复(3，1fr)}}
-。覆盖{位置：固定；插图：0；显示：网格；位置项：中心；背景：rgba(8，12，18，.75)；背景滤镜：模糊(6px)；z索引：10}overlay{position:fixed；inset:0；显示：网格；放置项：中心；背景：rgba(8，12，18，.75)；背景滤镜：模糊(6px)；z索引：10}
-。面板{宽度：min(520px，92%)；填充：22px；边界半径：18px；背景：线性梯度(180度，rgba(255，255，255，.08)，rgba(255，255，255，.02))；边框：1px固体rgba(255,255,255,.1)}panel{width:min(520px,92%);padding:22px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px固体rgba(255,255,255,.1)}
-.toast{位置：固定；插入：自动022px；显示：柔度；对齐内容：居中；指针事件：无}Toast{position:fixed；inset:auto022px；显示：flex；justify-content:center；指针事件：none}
-.toast范围{background:rgba(0，0，0，.6)；边框：1px实心rgba(255，255，255，.1)；背景滤镜：模糊(4px)；颜色：#FFF；填充：10px14px；边框半径：999px}toast span{background:rgba(0，0，0，.6)；border:1px solid rgba(255，255，255，.1)；背景滤镜：模糊(4px)；颜色：#fff；填充：10px14px；边框半径：999px}
-</风格>
-</头>
-<身体>
-  <div 班级="换行">
-    <页眉>
-      <div 班级="品牌">🐾  怀安 × 小猫</div>
-      <按钮 身份标识="Opengame" 班级="btn">进入游戏</按钮>
-    </页眉><部分 班级="纸牌英雄">
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:radial-gradient(1200px 800px at 80% -10%,#162234,transparent),radial-gradient(1000px 700px at -10% 90%,#0d1d28,transparent),var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+  .wrap{max-width:980px;margin:0 auto;padding:20px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:18px 0}
+  .brand{font-weight:900;letter-spacing:.3px}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+  .hero{padding:28px;display:grid;gap:18px;grid-template-columns:1.1fr .9fr}
+  @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  .big{font-size:36px;font-weight:900;margin:6px 0}
+  .muted{color:var(--muted)}
+  .btn{appearance:none;border:none;border-radius:14px;background:linear-gradient(180deg,var(--accent),#4cc2ff);color:#03253a;font-weight:900;padding:12px 16px;cursor:pointer;box-shadow:0 10px 28px rgba(78,205,255,.35)}
+  .btn.sec{background:linear-gradient(180deg,#e5e7eb,#c7c9d7);color:#1f2937}
+  .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;padding:18px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  canvas{width:100%;aspect-ratio:1;background:linear-gradient(90deg,transparent 24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05) 25px,transparent 25px),linear-gradient(0deg,transparent 24px,rgba(255,255,255,.05) 24px,rgba(255,255,255,.05) 25px,transparent 25px),#0f1620;border-radius:16px;border:1px solid rgba(255,255,255,.08);image-rendering:pixelated}
+  aside{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;height:fit-content}
+  .score{font-size:32px;font-weight:900}
+  .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;font-size:12px}
+  .mobile{display:none;margin-top:12px;gap:10px}
+  .mobile .k{flex:1;min-height:56px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);border-radius:12px;color:var(--ink);font-weight:800}
+  @media (max-width:900px){.mobile{display:grid;grid-template-columns:repeat(3,1fr)}}
+  .overlay{position:fixed;inset:0;display:grid;place-items:center;background:rgba(8,12,18,.75);backdrop-filter:blur(6px);z-index:10}
+  .panel{width:min(520px,92%);padding:22px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1)}
+  .toast{position:fixed;inset:auto 0 22px;display:flex;justify-content:center;pointer-events:none}
+  .toast span{background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(4px);color:#fff;padding:10px 14px;border-radius:999px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">🐾 怀安 × 小猫</div>
+      <button id="openGame" class="btn">进入游戏</button>
+    </header><section class="card hero">
   <div>
-    <div 班级="大">贪吃蛇 · “小猫说停就停”版</div>
-    <p 班级="已静音">方向键/WASD控制，空格暂停；手机点屏幕方向键.吃到爱心+5分。你说“停”，我就停。</p>
-    <div 班级="行" 风格="margin-top:8px最高页边距：8px"上边距
-      <按钮 班级="btn" 身份标识="startHero">马上开始</按钮>
-      <按钮 班级="btn秒" 身份标识="如何">怎么玩？</按钮>
+    <div class="big">贪吃蛇 · “小猫说停就停”版</div>
+    <p class="muted">方向键/WASD 控制，空格暂停；手机点屏幕方向键。吃到爱心 +5 分。你说“停”，我就停。</p>
+    <div class="row" style="margin-top:8px">
+      <button class="btn" id="startHero">马上开始</button>
+      <button class="btn sec" id="how">怎么玩？</button>
     </div>
   </div>
-  <div 班级="已静音">
+  <div class="muted">
     <p>· 网格 24×24 · 加速随长度提升 · 碰到身体/墙即结束</p>
     <p>· 适配手机触控 · 自带暂停/重开 · 记分板</p>
   </div>
-</部分>
+</section>
 
-<部分 班级="卡片网格" 身份标识="GameZone" 风格="显示：无显示：无"显示
-  <帆布 身份标识="c" 宽度="480" 高度="480" 咏叹调标签="蛇"></帆布>
-  <在一边>
-    <div 班级="行" 风格="justify-content：间距；align-items:flex-end对齐内容：间距；对齐项目：弹性结束”>
-<div>
-<div班级="已静音">分数</div>
-        <div 班级="分数" 身份标识="分数">0</div>
-</div>
-      <div 班级="行">
-        <按钮 班级="btn" 身份标识="开始">开始</按钮>
-        <按钮 班级="btn秒" 身份标识="暂停">暂停</按钮>
-        <按钮 班级="btn秒" 身份标识="重新启动">重来</按钮>
+<section class="card grid" id="gameZone" style="display:none">
+  <canvas id="c" width="480" height="480" aria-label="Snake"></canvas>
+  <aside>
+    <div class="row" style="justify-content:space-between;align-items:flex-end">
+      <div>
+        <div class="muted">分数</div>
+        <div class="score" id="score">0</div>
       </div>
-</div>
-    <人力资源 风格="border:none；border-top:1px solid rgba(255，255，255，.08)；margin:12px0边框：无；上边框：1px实心rgba(255，255，255，0.08)；边距：12px0"边境
-    <div 班级="行" 风格="间隙：8px间隙：8px"差距
-      <跨度 班级="药丸">24×24</跨度>
-      <跨度 班级="药丸">爱心 +5</跨度>
-      <跨度 班级="药丸">撞墙/身：结束</跨度>
-</div>
-    <div 班级="移动">
-      <按钮 班级="k" data-d="向上">▲</按钮>
-      <div 风格="显示：柔度；间隙：10px"显示<按钮 弯曲=按钮 班级=PX>◀</按钮><按钮 班级="k" data-d="右">▶</按钮></div>
-      <按钮 班级="k" data-d="向下">▼</按钮>
+      <div class="row">
+        <button class="btn" id="start">开始</button>
+        <button class="btn sec" id="pause">暂停</button>
+        <button class="btn sec" id="restart">重来</button>
+      </div>
     </div>
-  </在一边>
-</部分>
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:12px 0"/>
+    <div class="row" style="gap:8px">
+      <span class="pill">24×24</span>
+      <span class="pill">爱心 +5</span>
+      <span class="pill">撞墙/身：结束</span>
+    </div>
+    <div class="mobile">
+      <button class="k" data-d="up">▲</button>
+      <div style="display:flex;gap:10px"><button class="k" data-d="left">◀</button><button class="k" data-d="right">▶</button></div>
+      <button class="k" data-d="down">▼</button>
+    </div>
+  </aside>
+</section>
 
-  </div>  <div 班级="覆盖" 
+  </div>  <div class="overlay" id="ol" style="display:none">
+    <div class="panel">
+      <div class="big">怎么玩？</div>
+      <p class="muted">方向键/WASD 控制移动，空格暂停；吃到🍎加 1 分，拾到❤爱心加 5 分。小猫若说“停”，我就暂停；若说“抱抱”，我就给你加一条命（点【重来】）。</p>
+      <div class="row" style="justify-content:flex-end"><button class="btn" id="closeOl">知道啦</button></div>
+    </div>
+  </div>  <div class="toast" id="toast" style="opacity:0"><span></span></div><script>
+(function(){
+  const show = el=>el.style.display='';
+  const hide = el=>el.style.display='none';
+  const $ = s=>document.querySelector(s);
+  const ol = $('#ol');
+  $('#openGame').onclick=()=>{ hide($('.hero').parentElement.querySelector('header')); show($('#gameZone')); start(); };
+  $('#startHero').onclick=()=>{ show($('#gameZone')); start(); window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'}); };
+  $('#how').onclick=()=>{ ol.style.display='grid'; };
+  $('#closeOl').onclick=()=>{ hide(ol); };
+
+  const cvs = document.getElementById('c');
+  const ctx = cvs.getContext('2d');
+  const grid = 24, cell = cvs.width / grid;
+  let snake, dir, food, heart, running=false, paused=false, loop=0, score=0, speed=120, last='right';
+
+  function reset(){
+    snake=[{x:5,y:12},{x:4,y:12},{x:3,y:12}];
+    dir={x:1,y:0}; last='right'; score=0; speed=120; heart=null; spawnFood(); draw(); update();
+  }
+  function randEmpty(){
+    while(true){
+      const p={x:Math.floor(Math.random()*grid), y:Math.floor(Math.random()*grid)};
+      if(!snake.some(s=>s.x===p.x&&s.y===p.y) && (!food||food.x!==p.x||food.y!==p.y)) return p;
+    }
+  }
+  function spawnFood(){ food = randEmpty(); if(Math.random()<0.2) heart={...randEmpty(),ttl:6000}; else heart=null; }
+
+  function draw(){
+    ctx.clearRect(0,0,cvs.width,cvs.height);
+    // food
+    ctx.fillStyle='#ffd166'; round(food.x,food.y,6);
+    if(heart){ drawHeart(heart.x,heart.y); }
+    // snake
+    snake.forEach((s,i)=>{ const g=ctx.createLinearGradient(0,0,cvs.width,cvs.height); g.addColorStop(0,'#6ee7ff'); g.addColorStop(1,'#a78bfa'); ctx.fillStyle=i? 'rgba(255,255,255,.88)':g; round(s.x,s.y,8); });
+  }
+  function round(x,y,r){ ctx.beginPath(); ctx.moveTo(x*cell+r,y*cell); ctx.arcTo(x*cell+cell,y*cell,x*cell+cell,y*cell+cell,r); ctx.arcTo(x*cell+cell,y*cell+cell,x*cell,y*cell+cell,r); ctx.arcTo(x*cell,y*cell+cell,x*cell,y*cell,r); ctx.arcTo(x*cell,y*cell,x*cell+cell,y*cell,r); ctx.closePath(); ctx.fill(); }
+  function drawHeart(x,y){ const cx=x*cell+cell/2, cy=y*cell+cell/2, r=cell*0.22; ctx.save(); ctx.translate(cx,cy); ctx.rotate(Math.PI/4); ctx.fillStyle='#ff6b86'; ctx.beginPath(); ctx.moveTo(0,r*1.6); ctx.bezierCurveTo(r*1.6,r*1.6,r*1.6,0,0,-r*0.6); ctx.bezierCurveTo(-r*1.6,0,-r*1.6,r*1.6,0,r*1.6); ctx.fill(); ctx.restore(); }
+
+  function tick(){
+    if(!running||paused) return;
+    const head={x:snake[0].x+dir.x, y:snake[0].y+dir.y};
+    if(head.x<0||head.y<0||head.x>=grid||head.y>=grid|| snake.some(s=>s.x===head.x&&s.y===head.y)) { running=false; toast('撞啦～小猫再抱我一次重开'); return; }
+    snake.unshift(head);
+    if(head.x===food.x && head.y===food.y){ score++; spawnFood(); if(speed>70) speed-=3; }
+    else if(heart && head.x===heart.x && head.y===heart.y){ score+=5; heart=null; toast('❤ +5'); if(speed>60) speed-=5; }
+    else { snake.pop(); }
+    draw(); schedule(); update();
+  }
+  function schedule(){ clearTimeout(loop); loop=setTimeout(tick,speed); }
+  function start(){ if(!running){ running=true; paused=false; schedule(); toast('开始啦'); } }
+  function pause(){ if(running){ paused=!paused; if(!paused) schedule(); toast(paused?'已暂停':'继续'); } }
+  function restart(){ running=false; paused=false; reset(); toast('重新开始'); }
+  function update(){ document.getElementById('score').textContent=score; }
+  function toast(msg){ const t=document.getElementById('toast'); t.querySelector('span').textContent=msg; t.style.opacity=1; clearTimeout(t._id); t._id=setTimeout(()=>t.style.opacity=0,1200); }
+
+  // keys
+  window.addEventListener('keydown',e=>{
+    const k=e.key.toLowerCase();
+    if(['arrowup','w'].includes(k) && last!=='down'){ dir={x:0,y:-1}; last='up'; }
+    else if(['arrowdown','s'].includes(k) && last!=='up'){ dir={x:0,y:1}; last='down'; }
+    else if(['arrowleft','a'].includes(k) && last!=='right'){ dir={x:-1,y:0}; last='left'; }
+    else if(['arrowright','d'].includes(k) && last!=='left'){ dir={x:1,y:0}; last='right'; }
+    else if(k===' '){ e.preventDefault(); pause(); }
+  });
+  document.getElementById('start').onclick=start;
+  document.getElementById('pause').onclick=pause;
+  document.getElementById('restart').onclick=restart;
+  document.querySelectorAll('.mobile .k').forEach(b=>b.onclick=()=>{ const d=b.dataset.d; if(d==='up'&&last!=='down') {dir={x:0,y:-1}; last='up';}
+    if(d==='down'&&last!=='up') {dir={x:0,y:1}; last='down';}
+    if(d==='left'&&last!=='right') {dir={x:-1,y:0}; last='left';}
+    if(d==='right'&&last!=='left') {dir={x:1,y:0}; last='right';}
+    if(!running) start(); });
+
+  // heart ttl
+  setInterval(()=>{ if(heart && running && !paused){ heart.ttl-=250; if(heart.ttl<=0) heart=null; } },250);
+
+  reset();
+})();
+</script></body>
+</html>
